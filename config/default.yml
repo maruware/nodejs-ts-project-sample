@@ -1,0 +1,13 @@
+log4js:
+  appenders:
+    console:
+      type: console
+  categories:
+    default:
+      appenders:
+        - console
+      level: debug
+    access:
+      appenders:
+        - console
+      level: debug
