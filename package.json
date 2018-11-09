@@ -47,7 +47,10 @@
     "mocha": "^5.2.0",
     "nodemon": "^1.18.5",
     "pm2": "^3.2.2",
+    "prettier": "^1.15.1",
     "tslint": "^5.11.0",
-    "tslint-config-standard": "^8.0.1"
+    "tslint-config-prettier": "^1.15.0",
+    "tslint-config-standard": "^8.0.1",
+    "tslint-plugin-prettier": "^2.0.1"
   }
 }
