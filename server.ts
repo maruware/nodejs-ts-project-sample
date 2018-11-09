@@ -14,15 +14,16 @@ export const setup = () => {
   const app = new Koa()
   app.use(cors())
   app.use(bodyParser())
-  app.use(koaLogger((str, args) => {
-    logger.info(str)
-  }))
+  app.use(
+    koaLogger((str, args) => {
+      logger.info(str)
+    })
+  )
   app.use(koaError())
 
   const server = new http.Server(app.callback())
 
-  app.use(api.routes())
-    .use(api.allowedMethods())
+  app.use(api.routes()).use(api.allowedMethods())
 
   return server
 }
