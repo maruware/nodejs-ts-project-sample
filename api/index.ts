@@ -5,7 +5,6 @@ const router = new Router({
   prefix: '/api'
 })
 
-router.use(posts.routes())
-  .use(posts.allowedMethods())
+router.use(posts.routes()).use(posts.allowedMethods())
 
 export default router
