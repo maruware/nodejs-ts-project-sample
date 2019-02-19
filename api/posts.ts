@@ -5,11 +5,7 @@ const router = new Router({
 })
 
 router.get('/', async (ctx, next) => {
-  ctx.body = [
-    { text: 'a' },
-    { text: 'b' },
-    { text: 'c' }
-  ]
+  ctx.body = [{ text: 'a' }, { text: 'b' }, { text: 'c' }]
 })
 
 interface PostParam {
