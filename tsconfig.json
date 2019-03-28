@@ -1,6 +1,17 @@
 { 
   "compilerOptions": {
     "module": "commonjs",
-    "lib": ["es2018"]
+    "lib": ["es6"],
+    "target": "es6",
+    "esModuleInterop": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "importHelpers": true,
+    "strictNullChecks": false,
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedLocals": true,
+    "outDir": "./dist",
+    "sourceMap": true
   }
 }

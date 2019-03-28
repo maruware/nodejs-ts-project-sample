@@ -1,8 +1,8 @@
 import './initializers'
 import { setup } from './server'
-import * as log4js from 'log4js'
+import { getLogger } from 'log4js'
 
-const logger = log4js.getLogger()
+const logger = getLogger()
 const port = process.env.PORT || 3000
 
 const server = setup()
