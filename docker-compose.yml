@@ -2,10 +2,11 @@ version: '2.3'
 services:
   app:
     build: .
-    command: yarn dev
+    command: yarn debug
     ports:
       - "3000:3000"
-      - "9229:9229"
+      - "5858:5858"
+
     volumes:
       - .:/usr/src/app
       - /usr/src/app/node_modules
