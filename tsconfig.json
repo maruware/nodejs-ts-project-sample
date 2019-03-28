@@ -1,4 +1,4 @@
-{ 
+{
   "compilerOptions": {
     "module": "commonjs",
     "lib": ["es6"],
@@ -13,5 +13,12 @@
     "noUnusedLocals": true,
     "outDir": "./dist",
     "sourceMap": true
-  }
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
 }

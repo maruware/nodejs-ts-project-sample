@@ -1,7 +1,7 @@
 /* eslint-env jest */
 
 import request from 'supertest'
-import { setup } from '../../server'
+import { setup } from '../../src/server'
 
 const server = setup()
 
