@@ -5,9 +5,7 @@
   "main": "index.ts",
   "scripts": {
     "start": "node ./dist/index.js",
-    "watch": "tsc -w -p .",
-    "debug": "nodemon --legacy-watch --watch ./dist --inspect=0.0.0.0:5858 --nolazy ./dist/index.js",
-    "docker-debug": "docker-compose up",
+    "watch": "nodemon --watch 'src/**/*' -e ts --exec 'tsc && node --inspect=0.0.0.0 ./dist/index.js'",
     "test": "jest",
     "build": "tsc"
   },
